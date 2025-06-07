@@ -15,3 +15,18 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class MyPage extends StatelessWidget {
+  const MyPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("My first app"),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+      ),
+      body: const Center(child: Text("Hello")),
+    );
+  }
+}
