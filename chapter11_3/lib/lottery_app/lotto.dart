@@ -55,6 +55,7 @@ class _LottoState extends State<Lotto> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 83, 125, 198),
       body: Center(
         child: Column(
           children: [
