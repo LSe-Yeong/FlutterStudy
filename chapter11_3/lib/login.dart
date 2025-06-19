@@ -1,3 +1,4 @@
+import 'package:chapter11_3/lottery_app/layout_lotto.dart';
 import 'package:chapter11_3/lottery_app/lotto.dart';
 import 'package:chapter11_3/widget/my_container.dart';
 import 'package:chapter11_3/widget/my_textfield.dart';
@@ -105,7 +106,7 @@ class _LoginState extends State<Login> {
                   GestureDetector(
                     onTap: (){
                       if(emailController.text == 'email@email.com' && passwordController.text == '123456'){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => Lotto(),));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => LayoutLotto(),));
                       } else if (emailController.text != 'email@email.com' && passwordController.text == '123456') {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
